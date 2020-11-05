@@ -9,9 +9,39 @@
 
     <TextView
         android:id="@+id/id_name"
+        style="@style/NameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/name"
         android:textAlignment="center"
-        style="@style/NameStyle" />
+        android:textSize="@dimen/size_text" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:contentDescription="@string/yellow_star"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingStart="@dimen/padding"
+        android:paddingTop="@dimen/padding_top"
+        android:paddingEnd="@dimen/padding">
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/bioDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans_sc"
+            android:lineSpacingMultiplier="1.5"
+            android:text="@string/bio"
+            android:textAlignment="center" />
+
+    </ScrollView>
+
 </LinearLayout>

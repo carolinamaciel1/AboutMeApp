@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">AboutMe</string>
     <string name="name">Carolina Maciel</string>
+    <string name="yellow_star">Yellow Sstar</string>
+    <string name="bio">Olá, meu nome é Anna Carolina Maciel Freire tenho 22 anos e sou desenvolvedora de software com skills na linguagem python, java, c e atualmente estou estudando desenvolvimento de apps mobile usando android nativo com a linguagem Kotlin! Também sou estudante de Engenharia da computação, atualmente curso o 7º semestre!
+
+        Atualmente estou estudando outras coisas além de python; Decidi me aventurar a voltar a estudar desenvolvimento mobile, eu particularmente acho bastante interessante e aqui em São Paulo é uma das áreas que mais
+        crescem todos os dias.
+
+        No futuro gostaria de trabalhar ajudando outras pessoas a aprederem sobre o desenvolvimento de aplicativos, é um nicho muito bom e que permite que a pessoa ascenda profissionalmente!
+
+        Acredito que tenho muito a ensinar assim como também aprender, acompanhar as comunidades está me ajudando a ser uma profissional melhor e mais dedicada!
+    </string>
+    <string name="aboutme_description">Bio</string>
 </resources>

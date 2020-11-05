@@ -14,4 +14,9 @@
         <item name="android:textSize">20sp</item>
     </style>
 
+    <style name="bioDescription">
+        <item name="android:contentDescription">@string/aboutme_description</item>
+        <item name="android:textSize">@dimen/bio_size</item>
+    </style>
+
 </resources>
