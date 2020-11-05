@@ -12,4 +12,6 @@
         Acredito que tenho muito a ensinar assim como também aprender, acompanhar as comunidades está me ajudando a ser uma profissional melhor e mais dedicada!
     </string>
     <string name="aboutme_description">Bio</string>
+    <string name="nickname_hint">What\'s your nickname?</string>
+    <string name="done">Done</string>
 </resources>
