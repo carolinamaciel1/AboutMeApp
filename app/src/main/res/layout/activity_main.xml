@@ -1,79 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/id_name"
-        style="@style/NameStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:textAlignment="center"
-        android:textSize="@dimen/size_text" />
-
-    <EditText
-        android:id="@+id/nickname_id"
-        style="@style/NameStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/nickname_hint"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_top"
-        android:contentDescription="@string/yellow_star"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
-
-    <Button
-        android:id="@+id/button_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/done"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/padding"
-        android:fontFamily="@font/alegreya_sans_sc"
-        style="@style/Widget.AppCompat.Button.Colored"
-        />
-
-    <TextView
-        android:id="@+id/nickname_text_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/padding"
-        android:text="TextView"
-        android:textAlignment="center"
-        android:textSize="@dimen/size_text"
-        android:visibility="gone" />
-
-    <ScrollView
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clipToPadding="false"
-        android:paddingStart="@dimen/padding"
-        android:paddingTop="@dimen/padding_top"
-        android:paddingEnd="@dimen/padding">
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
         <TextView
-            android:id="@+id/textView2"
-            style="@style/bioDescription"
+            android:id="@+id/id_name"
+            style="@style/NameStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textAlignment="center"
+            android:textSize="@dimen/size_text" />
+
+        <EditText
+            android:id="@+id/nicknameEditView"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/nickname_hint"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:contentDescription="@string/yellow_star"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <Button
+            android:id="@+id/doneButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/done"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding"
             android:fontFamily="@font/alegreya_sans_sc"
-            android:lineSpacingMultiplier="1.5"
-            android:text="@string/bio"
-            android:textAlignment="center" />
+            style="@style/Widget.AppCompat.Button.Colored"
+            />
 
-    </ScrollView>
+        <TextView
+            android:id="@+id/nicknameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="@dimen/size_text"
+            android:visibility="gone" />
 
-</LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/padding"
+            android:paddingTop="@dimen/padding_top"
+            android:paddingEnd="@dimen/padding">
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/bioDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alegreya_sans_sc"
+                android:lineSpacingMultiplier="1.5"
+                android:text="@string/bio"
+                android:textAlignment="center" />
+
+        </ScrollView>
+    </LinearLayout>
+</layout>
