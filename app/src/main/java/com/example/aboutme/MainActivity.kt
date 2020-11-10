@@ -7,10 +7,14 @@ import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.aboutme.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+
     private lateinit var binding : ActivityMainBinding
+    private val myName  = MyName("Carolina Maciel")
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,10 +22,13 @@ class MainActivity : AppCompatActivity() {
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
+        binding.myName = myName
+
         binding.doneButtonId.setOnClickListener{addNickname(it)}
     }
 
     private fun addNickname(view: View){
+        myName.nickname = nicknameEditView.text.toString()
         binding.nicknameTextView.text = binding.nicknameEditView.text
         binding.nicknameEditView.visibility = View.GONE
         binding.doneButtonId.visibility = View.GONE
