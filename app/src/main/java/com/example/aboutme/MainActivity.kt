@@ -28,11 +28,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addNickname(view: View){
-        myName.nickname = nicknameEditView.text.toString()
-        binding.nicknameTextView.text = binding.nicknameEditView.text
-        binding.nicknameEditView.visibility = View.GONE
-        binding.doneButtonId.visibility = View.GONE
-        binding.nicknameTextView.visibility = View.VISIBLE
+        binding.apply{
+            myName?.nickname = nicknameEditView.text.toString()
+            // Invalidate all binding expressions and request a new rebind to refresh UI
+            invalidateAll()
+            binding.nicknameTextView.text = binding.nicknameEditView.text
+            binding.nicknameEditView.visibility = View.GONE
+            binding.doneButtonId.visibility = View.GONE
+            binding.nicknameTextView.visibility = View.VISIBLE
+        }
 
         // Hide the keyboard.
         val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
